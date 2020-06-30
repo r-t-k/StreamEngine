@@ -1,0 +1,23 @@
+<head>
+  <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@videojs/http-streaming@1.13.3/dist/videojs-http-streaming.cjs.min.js"></script>
+</head>
+
+<body>
+    <video-js id=example-video width=960 height=540 class="vjs-default-skin" controls>
+        <source
+           src="./live/tom/index.m3u8"
+           type="application/x-mpegURL">
+      </video-js>
+    
+      <script>
+      var player = videojs('example-video');
+      player.play();
+      </script>
+
+
+</body>
