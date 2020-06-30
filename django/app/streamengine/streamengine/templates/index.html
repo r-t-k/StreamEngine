@@ -22,13 +22,13 @@
     <!--Base Layout-->
     <div id="root">
         <!--top navbar-->
-        <div class="uk-width-1-1">
+        <div id="top-nav-pane" class="uk-width-1-1">
             <div
                 uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-                <nav id="top-nav" class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <nav id="top-nav" class="uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
 
-                        <ul class="uk-navbar-nav">
+                        <ul class="uk-navbar-nav top-nav-menu">
                             <li class="uk-active"><a href="#">Active</a></li>
                             <li>
                                 <a href="#">Parent</a>
@@ -44,6 +44,33 @@
                         </ul>
 
                     </div>
+                    <!-- TOP NAV CENTER -->
+                    <div class="uk-navbar-center">
+                        <form id="top-nav-search" class="uk-search uk-search-default">
+                            <a id="top-nav-search-btn" href="" class="uk-search-icon-flip" uk-search-icon></a>
+                            <input id="top-nav-search-field" class="uk-search-input" type="search" placeholder="Search">
+                        </form>
+
+                    </div>
+                    <!-- END TOP NAV CENTER -->
+                    <!-- TOP NAV Right -->
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav top-nav-menu">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                    <!-- END TOP NAV Right -->
                 </nav>
             </div>
         </div>
@@ -82,14 +109,30 @@
             <div id="content-pane" class="uk-width-expand">
                 <div id="content" class="uk-container-expand">
                     <div class="uk-container-expand">
-                        <p>
-                            foooobar
-                            foooobar
-                            foooobar
-                            foooobar
-                            foooobar
-                            foooobar
-                        </p>
+                        <div class="uk-child-width-1-6" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-3">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-2-3">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

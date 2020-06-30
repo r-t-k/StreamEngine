@@ -4,16 +4,15 @@
     --purple-navy: #3D4370;
     --davys-grey: #4A4A4A;
     --sonic-silver: #717175;
+    --dark: #08090C;
 }
 
 html,
 body {
-    background-color: var(--charcoal);
+    background-color: var(--dark);
 }
 
-body {
-
-}
+body {}
 
 #root {
     height: 100%;
@@ -24,15 +23,57 @@ body {
     height: 100%;
 }
 
+#top-nav-pane {
+
+    margin-bottom: 5px;
+}
+
 #top-nav {
-    background-color: var(--oxford-blue);
+    background-color: var(--charcoal);
+    position: relative;
+    z-index: 980;
+    height: 50px;
+}
+
+.top-nav-menu {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+#top-nav-search {
+    background: var(--sonic-silver);
+    border-radius: 5px;
+    width: 360px;
+}
+
+#top-nav-search-field {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: ;
+    border-top-left-radius: 6px;
+    padding-right: 40px;
+    width: 320px;
+    border-color: var(--dark);
+    border-style: solid;
+    background-color: var(--sonic-silver);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-width: 0px;
+    border-right-width: 1px;
+}
+
+#top-nav-search-btn {
+    background-color: var(--sonic-silver);
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 #side-nav {
-    background-color: var(--purple-navy);
+    background-color: var(--charcoal);
     position: fixed;
     width: calc(100% * 1 / 12.001);
 }
+
 #side-nav-pane {
     padding: 5%;
 }
@@ -41,15 +82,36 @@ body {
     margin-left: calc(100% * 1 / 12.001);
     width: calc(100% * 11 / 12.001);
 }
+
 #content-pane {
-    background-color: var(--charcoal);
+    background-color: var(--dark);
     min-height: 200vh;
     padding-left: 0;
 }
+
 #content {
-    background-color: var(--sonic-silver);
+
     min-height: 200vh;
     margin-top: 40px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: calc(100% * 1 / 12.001);
+    margin-right: calc(100% * 1 / 12.001);
+}
+
+.vid-prev-card {
+    background: none;
+}
+
+.vid-prev-body {
+    text-align: left;
+}
+
+.vid-prev-body span {
+    display: block;
+
+}
+
+.vid-prev-body span.uk-badge {
+    text-align: center;
+    display: inline-block;
+
 }
