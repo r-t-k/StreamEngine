@@ -1,0 +1,55 @@
+:root {
+    --oxford-blue: #060A26;
+    --charcoal: #35384A;
+    --purple-navy: #3D4370;
+    --davys-grey: #4A4A4A;
+    --sonic-silver: #717175;
+}
+
+html,
+body {
+    background-color: var(--charcoal);
+}
+
+body {
+
+}
+
+#root {
+    height: 100%;
+    min-height: 100vh;
+}
+
+#main-grid {
+    height: 100%;
+}
+
+#top-nav {
+    background-color: var(--oxford-blue);
+}
+
+#side-nav {
+    background-color: var(--purple-navy);
+    position: fixed;
+    width: calc(100% * 1 / 12.001);
+}
+#side-nav-pane {
+    padding: 5%;
+}
+
+#main-grid {
+    margin-left: calc(100% * 1 / 12.001);
+    width: calc(100% * 11 / 12.001);
+}
+#content-pane {
+    background-color: var(--charcoal);
+    min-height: 200vh;
+    padding-left: 0;
+}
+#content {
+    background-color: var(--sonic-silver);
+    min-height: 200vh;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
