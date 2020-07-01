@@ -40,3 +40,6 @@ def stop_stream(request):
 
 def index(request):
     return render(request, 'index.html')
+
+def channel(request):
+    return render(request, 'channel.html')

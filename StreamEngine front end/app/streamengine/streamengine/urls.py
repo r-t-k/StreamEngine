@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import start_stream, stop_stream, index
+from .views import start_stream, stop_stream, index, channel
 
 
 def fake_view(*args, **kwargs):
@@ -32,5 +32,6 @@ urlpatterns = [
     path("stop_stream", stop_stream, name="stop-stream"),
     path("live/<username>/index.m3u8", fake_view, name="hls-url"),
     path("/", index, name="index"),
-    path("", index, name="index")
+    path("", index, name="index"),
+    path("channel", channel, name="channel"),
 ]

@@ -1,0 +1,16 @@
+<div id="player-wrap">
+    <div id="player-pane">
+        <video-js id=live-video width=960 height=540 class="vjs-default-skin" controls data-setup='{"liveui": true}'>
+            <source
+               src="http://localhost:9000/live/foobar/index.m3u8"
+               type="application/x-mpegURL">
+          </video-js>
+        
+          <script>
+          var player = videojs('example-video');
+          player.aspectRatio('16:9');
+          player.fill(true);
+          player.play();
+          </script>
+    </div>
+</div>
