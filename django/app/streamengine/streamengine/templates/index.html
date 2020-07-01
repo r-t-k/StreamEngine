@@ -29,18 +29,30 @@
                     <div class="uk-navbar-left">
 
                         <ul class="uk-navbar-nav top-nav-menu">
-                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li class="uk-active"><a href="#"><span uk-icon="icon: cog"></span> <span
+                                        style="padding-left: 5px;">StreamEngine</span></a></li>
                             <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
+                                <a href="#">Browse</a>
+                            </li>
+                            <li>
+                                <a href="#">Games</a>
+                            </li>
+                            <li>
+                                <a href="#">Music</a>
+                            </li>
+                            <li>
+                                <button class="uk-button uk-button-default" type="button" style="border: none;"><span
+                                        uk-icon="more"></span></button>
+                                <div uk-dropdown="mode: click">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-nav-header">Header</li>
                                         <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
                                         <li><a href="#">Item</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#">Item</a></li>
                         </ul>
 
                     </div>
@@ -56,18 +68,35 @@
                     <!-- TOP NAV Right -->
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav top-nav-menu">
-                            <li class="uk-active"><a href="#">Active</a></li>
                             <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <button class="notifications-nav"><span uk-icon="more-vertical"></span></button>
+                                <div uk-dropdown="mode: click">
+                                    <ul class="uk-nav uk-dropdown-nav">
                                         <li class="uk-active"><a href="#">Active</a></li>
                                         <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
                                         <li><a href="#">Item</a></li>
                                     </ul>
                                 </div>
+
                             </li>
-                            <li><a href="#">Item</a></li>
+                            <li>
+                                <a href="#"><button class="uk-button uk-button-secondary uk-button-small login-nav">Log
+                                        In</button></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><button class="uk-button uk-button-primary uk-button-small signup-nav">Sign
+                                        Up</button></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span class="profile-nav" uk-icon="user"></span></a>
+
+                            </li>
                         </ul>
                     </div>
                     <!-- END TOP NAV Right -->
@@ -79,26 +108,241 @@
         <div id="side-nav" class="uk-width-1-6 uk-height-1-1">
             <div id="side-nav-pane">
                 <ul class="uk-nav-default uk-nav-parent-icon uk-width-expand uk-height-1-1" uk-nav>
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li class="uk-parent">
-                        <a href="#">Parent</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="#">Parent</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-header">Recommended Channels</li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                        <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
+                    <li><a href="#">
+                            <div class="side-nav-chan uk-grid">
+                                <div class="uk-width-1-3">
+                                    <div class="card-avatar-thumb">
+                                        <img data-src="https://via.placeholder.com/60x60" width="" height="" alt=""
+                                            uk-img>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-1-3" style="padding-left: 10px;">
+                                    <span><strong>Name</strong></span>
+                                    <span>Category/Game</span>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-flex uk-flex-nowrap"
+                                    style="align-items: center; padding-left: 35px;">
+                                    <div class="status-dot offline"></div>
+                                    <span class="follows">19.8K</span>
+
+                                </div>
+                            </div>
+
+                        </a></li>
                     <li class="uk-nav-divider"></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+
                 </ul>
             </div>
         </div>
@@ -108,7 +352,91 @@
             <!-- Content Pane -->
             <div id="content-pane" class="uk-width-expand">
                 <div id="content" class="uk-container-expand">
-                    <div class="uk-container-expand">
+                    <div class="uk-container-expand uk-flex uk-flex-column">
+                        <!-- begin card placeholder demo-->
+                        <div id="home-top-vids-slider" uk-slider>
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container uk-light">
+                                    <ul class="uk-slider-items uk-child-width-1-5">
+                                        <li class="slide-left-2">
+                                            <div>
+                                                <img src="https://via.placeholder.com/500x350/292E3D" alt="">
+                                                <div class="uk-position-center uk-panel">
+                                                    <h1></h1>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li class="slide-left-1">
+                                            <div>
+                                                <img src="https://via.placeholder.com/500x350/313749" alt="">
+                                                <div class="uk-position-center uk-panel">
+                                                    <h1></h1>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide-center">
+                                            <div>
+                                                <img src="https://via.placeholder.com/500x350/394056" alt="">
+                                                <div class="uk-position-center uk-panel">
+                                                    <h1></h1>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide-right-1">
+                                            <div>
+                                                <img src="https://via.placeholder.com/500x350/313749" alt="">
+                                                <div class="uk-position-center uk-panel">
+                                                    <h1></h1>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide-right-2">
+                                            <div>
+                                                <img src="https://via.placeholder.com/500x350/292E3D" alt="">
+                                                <div class="uk-position-center uk-panel">
+                                                    <h1></h1>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide-next">
+                                            <img src="https://via.placeholder.com/500x350/313749" alt="">
+                                            <div class="uk-position-center uk-panel">
+                                                <h1>6</h1>
+                                            </div>
+                                        </li>
+                                        <li class="slide-next">
+                                            <img src="https://via.placeholder.com/500x350/313749" alt="">
+                                            <div class="uk-position-center uk-panel">
+                                                <h1>7</h1>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="uk-hidden@s uk-light">
+                                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                                        uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                                        uk-slider-item="next"></a>
+                                </div>
+
+                                <div class="uk-visible@s">
+                                    <a class="uk-position-center-left-out uk-position-small" href="#"
+                                        uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                                        uk-slider-item="next"></a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="uk-width-1-1">
+                            <h3 class="uk-align-left">Live Channels</h3>
+                        </div>
                         <div class="uk-child-width-1-6" uk-grid>
                             <div>
                                 <div class="uk-card uk-card-default vid-prev-card">
@@ -117,11 +445,11 @@
                                     </div>
                                     <div class="uk-card-body uk-light vid-prev-body">
                                         <div class="uk-width-expand" uk-grid>
-                                            <div class="uk-width-1-3">
+                                            <div class="uk-width-1-4 card-avatar-thumb">
                                                 <img data-src="https://via.placeholder.com/80x80" width="" height=""
                                                     alt="" uk-img>
                                             </div>
-                                            <div class="uk-width-2-3">
+                                            <div class="uk-width-3-4 card-desc">
                                                 <span><a><strong>Title</strong></a></span>
                                                 <span><a>Channel</a></span>
                                                 <span><a>Category</a></span>
@@ -131,8 +459,382 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end demo cards-->
                         </div>
+                        <hr class="uk-divider-icon">
+                        <div class="uk-width-1-1">
+                            <h3 class="uk-align-left"><a href="#">Categories</a></h3>
+                        </div>
+                        <div class="uk-child-width-1-6" uk-grid>
+                            <!-- begin card placeholder demo-->
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end demo cards-->
+                        </div>
+                        <hr class="uk-divider-icon">
+                        <div class="uk-width-1-1">
+                            <h3 class="uk-align-left">Popular</h3>
+                        </div>
+                        <div class="uk-child-width-1-6" uk-grid>
+                            <!-- begin card placeholder demo-->
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default vid-prev-card">
+                                    <div class="uk-card-media-top">
+                                        <img src="https://via.placeholder.com/300x250" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-light vid-prev-body">
+                                        <div class="uk-width-expand" uk-grid>
+                                            <div class="uk-width-1-4 card-avatar-thumb">
+                                                <img data-src="https://via.placeholder.com/80x80" width="" height=""
+                                                    alt="" uk-img>
+                                            </div>
+                                            <div class="uk-width-3-4 card-desc">
+                                                <span><a><strong>Title</strong></a></span>
+                                                <span><a>Channel</a></span>
+                                                <span><a>Category</a></span>
+                                                <span class="uk-badge">English</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end demo cards-->
+                        </div>
+                        <hr class="uk-divider-icon">
                     </div>
                 </div>
             </div>
