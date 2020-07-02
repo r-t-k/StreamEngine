@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.views.generic.base import TemplateView
 
-from .views import start_stream, stop_stream, index, channel
+from .views import  index, channel, SignUpView, profile
 
 
 def fake_view(*args, **kwargs):
@@ -28,10 +29,12 @@ def fake_view(*args, **kwargs):
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("start_stream", start_stream, name="start-stream"),
-    path("stop_stream", stop_stream, name="stop-stream"),
-    path("live/<username>/index.m3u8", fake_view, name="hls-url"),
     path("/", index, name="index"),
     path("", index, name="index"),
+    path('auth_landing', TemplateView.as_view(template_name='auth_landing.html'), name='auth'),
+    path("home", index, name="index"),
     path("channel", channel, name="channel"),
+    path("profile", profile, name="profile"),
+    path('signup/', SignUpView.as_view(), name='signup'),
+    path('/', include('django.contrib.auth.urls'))
 ]

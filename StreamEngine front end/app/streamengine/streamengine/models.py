@@ -1,38 +1,30 @@
 from functools import partial
-
-from django.conf import settings
+from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from django.urls import reverse
 from django.utils.crypto import get_random_string
-
+import uuid
 
 make_stream_key = partial(get_random_string, 20)
 
 
-class Stream(models.Model):
 
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL, related_name="stream", on_delete=models.CASCADE)
-    key = models.CharField(max_length=20, default=make_stream_key, unique=True)
-    started_at = models.DateTimeField(null=True, blank=True)
+class CustomUser(AbstractUser):
+    pass
+    # add additional fields in here
+    uid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    channels = models.TextField(blank=True)
+    privs = models.TextField(blank=True)
+    subs = models.TextField(blank=True)
 
     def __str__(self):
-        return self.user.username
-
-    @property
-    def is_live(self):
-        return self.started_at is not None
-
-    @property
-    def hls_url(self):
-        return reverse("hls-url", args=(self.user.username,))
+        return self.username
 
 
-@receiver(post_save, sender=settings.AUTH_USER_MODEL, dispatch_uid="create_stream_for_user")
-def create_stream_for_user(sender, instance=None, created=False, **kwargs):
-    """ Create a stream for new users.
-    """
-    if created:
-        Stream.objects.create(user=instance)
+class Channel(models.Model):
+    cid = models.UUIDField(primary_key=True, default=uuid.uuid4, unique=True)
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(unique=True, max_length=255)
+    vods = models.TextField(blank=True)
+    moderators = models.ManyToManyField(CustomUser, related_name="moderators")
+    streamkey = models.UUIDField(default=uuid.uuid4, unique=True)
+    creator = models.ForeignKey(CustomUser, on_delete=models.CASCADE)

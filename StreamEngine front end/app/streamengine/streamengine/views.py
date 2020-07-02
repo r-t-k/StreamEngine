@@ -4,42 +4,30 @@ from django.utils import timezone
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
+from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView
 
-from .models import Stream
+from .forms import CustomUserCreationForm
+from .models import Channel, CustomUser
 
+class SignUpView(CreateView):
+    form_class = CustomUserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'signup.html'
 
-@require_POST
-@csrf_exempt
-def start_stream(request):
-    """ This view is called when a stream starts.
-    """
-    stream = get_object_or_404(Stream, key=request.POST["name"])
-
-    # Ban streamers by setting them inactive
-    if not stream.user.is_active:
-        return HttpResponseForbidden("Inactive user")
-
-    # Don't allow the same stream to be published multiple times
-    if stream.started_at:
-        return HttpResponseForbidden("Already streaming")
-
-    stream.started_at = timezone.now()
-    stream.save()
-
-    # Redirect to the streamer's public username
-    return redirect("/" + stream.user.username)
-
-
-@require_POST
-@csrf_exempt
-def stop_stream(request):
-    """ This view is called when a stream stops.
-    """
-    Stream.objects.filter(key=request.POST["name"]).update(started_at=None)
-    return HttpResponse("OK")
 
 def index(request):
     return render(request, 'index.html')
 
 def channel(request):
     return render(request, 'channel.html')
+
+def profile(request):
+    user = CustomUser.objects.get(username='tom')
+    channel = Channel.objects.get(creator=user)
+    
+    context = {
+        'streamkey': channel.streamkey,
+    }
+    
+    return render(request, 'profile.html', context)

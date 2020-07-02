@@ -1,9 +1,23 @@
 from django.contrib import admin
+from django.contrib.auth import get_user_model
+from django.contrib.auth.admin import UserAdmin
+from django import forms
 
-from .models import Stream
+from .forms import CustomUserCreationForm, CustomUserChangeForm, CustomChangeChannelForm, CustomCreateChannelForm
+from .models import CustomUser, Channel
 
 
-@admin.register(Stream)
-class StreamAdmin(admin.ModelAdmin):
-    list_display = ("__str__", "started_at", "is_live")
-    readonly_fields = ("hls_url",)
+class CustomUserAdmin(UserAdmin):
+    add_form = CustomUserCreationForm
+    form = CustomUserChangeForm
+    model = CustomUser
+    list_display = ['email', 'username', 'uid']
+
+admin.site.register(CustomUser, CustomUserAdmin)
+
+
+class CustomChannelAdmin(admin.ModelAdmin):
+    model = Channel
+    list_display = ['title', 'slug', 'vods', 'cid']
+
+admin.site.register(Channel)
