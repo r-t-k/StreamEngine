@@ -28,3 +28,6 @@ class Channel(models.Model):
     moderators = models.ManyToManyField(CustomUser, related_name="moderators")
     streamkey = models.UUIDField(default=uuid.uuid4, unique=True)
     creator = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.streamkey

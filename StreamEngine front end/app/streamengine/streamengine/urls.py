@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
 
-from .views import  index, channel, SignUpView, profile
+from .views import  index, channel, SignUpView, profile, ChannelDetailView, streamAuth
 
 
 def fake_view(*args, **kwargs):
@@ -36,5 +36,8 @@ urlpatterns = [
     path("channel", channel, name="channel"),
     path("profile", profile, name="profile"),
     path('signup/', SignUpView.as_view(), name='signup'),
-    path('/', include('django.contrib.auth.urls'))
+    path('/', include('django.contrib.auth.urls')),
+    path('channels/<slug>', ChannelDetailView.as_view(), name='channels'),
+    path('stream_auth/<key>', streamAuth, name='stream_auth')
 ]
+ 
