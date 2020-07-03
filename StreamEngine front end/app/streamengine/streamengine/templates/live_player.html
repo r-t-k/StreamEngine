@@ -1,16 +1,19 @@
 <div id="player-wrap">
     <div id="player-pane">
-        <video-js id=live-video width=960 height=540 class="vjs-default-skin" controls data-setup='{"liveui": true}'>
+        <video-js id=dvr-video  class="vjs-theme-fantasy" muted data-setup='{ "controls": true, "autoplay": true, "preload": "auto" }'>
             <source
-               src="http://localhost:9000/live/foobar/index.m3u8"
-               type="application/x-mpegURL">
+               src="http://localhost:9000/live/{{object.streamkey}}/index.m3u8"
+               type="application/x-mpegURL"
+               >
           </video-js>
         
           <script>
-          var player = videojs('example-video');
+          var player = videojs('dvr-video', {autoplay: true});
           player.aspectRatio('16:9');
           player.fill(true);
           player.play();
           </script>
     </div>
 </div>
+
+

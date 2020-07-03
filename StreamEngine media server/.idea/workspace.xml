@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38992491-ccc8-42b5-b531-a22c7e3c679e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/templates/channel_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/templates/channel_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/templates/live_player.html" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/templates/live_player.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamEngine front end/app/streamengine/streamengine/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -62,7 +64,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593622053312</updated>
-      <workItem from="1593622054551" duration="5980000" />
+      <workItem from="1593622054551" duration="6530000" />
+      <workItem from="1593708877931" duration="1120000" />
+      <workItem from="1593710165141" duration="133000" />
+      <workItem from="1593710363258" duration="780000" />
+      <workItem from="1593711222689" duration="2344000" />
     </task>
     <servers />
   </component>
@@ -74,7 +80,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

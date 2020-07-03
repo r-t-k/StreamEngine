@@ -23,6 +23,9 @@
 {% include "sidenav.html" %}
 {% endblock %}
 {% block first_content %}
+{% if object.is_live %}
+{% include "live_player.html" %}
+{% endif %}
 
 {% endblock %}
 {% block content %}
