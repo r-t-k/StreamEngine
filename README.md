@@ -5,6 +5,15 @@ StreamEngine is a live streaming app that simply described will be like a white 
 
 This project is in the very early stages of development, and lots more info will be added in the coming days as more progress and planning is done.
 
+[![Image from Gyazo](https://i.gyazo.com/0bd87cae5130c80427f74f3b70d7f321.png)](https://gyazo.com/0bd87cae5130c80427f74f3b70d7f321)
+
+Early version of the desktop homepage, done with plain old html/css vanilla js and UIkit.
+I'll add a demo link when it's ready.
+
+[![Image from Gyazo](https://i.gyazo.com/cb9f851859cf6a1f5b0e2b6c93111bef.png)](https://gyazo.com/cb9f851859cf6a1f5b0e2b6c93111bef)
+
+Live channel page. I'll put up a gif or something to show a better example later.
+
 ## This Repo
 
 
