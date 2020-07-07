@@ -10,9 +10,6 @@ This project is in the very early stages of development, and lots more info will
 Early version of the desktop homepage, done with plain old html/css vanilla js and UIkit.
 I'll add a demo link when it's ready.
 
-[![Image from Gyazo](https://i.gyazo.com/cb9f851859cf6a1f5b0e2b6c93111bef.png)](https://gyazo.com/cb9f851859cf6a1f5b0e2b6c93111bef)
-
-Live channel page. I'll put up a gif or something to show a better example later.
 
 ## This Repo
 
