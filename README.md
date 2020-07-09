@@ -9,7 +9,7 @@ This project is in the very early stages of development, and lots more info will
 
 Early version of the desktop homepage, done with plain old html/css vanilla js and UIkit.
 I'll add a demo link when it's ready.
-![](https://cloud.kyser.io/s/jWA4SPwk29SxRYD/preview)
+![](stream_abr_demo.gif)
 
 ## This Repo
 
