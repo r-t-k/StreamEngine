@@ -5,11 +5,11 @@ StreamEngine is a live streaming app that simply described will be like a white 
 
 This project is in the very early stages of development, and lots more info will be added in the coming days as more progress and planning is done.
 
-Early version of the desktop homepage, done with plain old html/css vanilla js and UIkit.
-I'll add a demo link when it's ready.
+**Early version of the desktop homepage, done with plain old html/css vanilla js and UIkit.
+I'll add a demo link when it's ready.**
 [![Image from Gyazo](https://i.gyazo.com/0bd87cae5130c80427f74f3b70d7f321.png)](https://gyazo.com/0bd87cae5130c80427f74f3b70d7f321)
 
-Adaptive Bitrate HLS player and stream example.
+**Adaptive Bitrate HLS player and stream example.**
 ![](stream_abr_demo.gif)
 
 
