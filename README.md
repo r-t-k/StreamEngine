@@ -46,6 +46,7 @@ The stack may change abit early on in development, but right now I have a solid 
 ## The Status
 
 Right now I'm working on a proof of concept, so the plan to split the parts up might come later, for now the web app comprises the UI, Admin, and API as a Django monolith.
+Here is the GitHub project page for tracking progress: https://github.com/users/r-t-k/projects/2
 
 ## The Open Source Part
 
