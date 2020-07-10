@@ -29,7 +29,7 @@ Obviously a twitch scale app is gonna involve alot of moving pieces, so I'm sure
 
 - [ ] UI (web app) repo: https://github.com/r-t-k/StreamEngine-UI
 - [ ] API (connects everything and handles the DB)
-- [ ] User Admin (For the management of an app instance and its community)
+- [ ] StreamEngine Admin Panel (For the management of an app instance and its community)
 - [ ] Stream Backend repos: https://github.com/r-t-k/StreamEngine-srs-origin | https://github.com/r-t-k/StreamEngine-srs-hls-transcode
 
 
@@ -40,7 +40,7 @@ The stack may change abit early on in development, but right now I have a solid 
 
 - UI: Django w/UIkit and vanilla js (plan to move to Vue in the future)
 - API: Django Rest Framework
-- User Admin: TBD
+- StreamEngine Admin Panel: TBD
 - Stream Backend: OSSRS (https://github.com/ossrs/srs/)
 
 ## The Status
