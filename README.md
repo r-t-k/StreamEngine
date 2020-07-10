@@ -38,7 +38,7 @@ Obviously a twitch scale app is gonna involve alot of moving pieces, so I'm sure
 
 The stack may change abit early on in development, but right now I have a solid idea of what I want the architecture to be
 
-- UI: Either Django with Vue/React or just Vue/React, framework choices depend on the help I get
+- UI: Django w/UIkit and vanilla js (plan to move to Vue in the future)
 - API: Django Rest Framework
 - User Admin: TBD
 - Stream Backend: OSSRS (https://github.com/ossrs/srs/)
