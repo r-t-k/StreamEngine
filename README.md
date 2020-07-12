@@ -16,6 +16,7 @@ This project is in the very early stages of development, and lots more info will
 **Link:** https://streamengine.live/channels/demo
 
 **Username:** demo
+
 **Password:** demopassword
 
 **OBS:**
