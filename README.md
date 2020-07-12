@@ -25,6 +25,10 @@ Host:```rtmp://66.228.51.60/```
 
 Stream Key: ```live```
 
+Get OBS: https://obsproject.com/
+
+How to use: https://obsproject.com/wiki/OBS-Studio-Quickstart
+
 ### Demo Progess
 
 So the only thing that is mostly functional at the moment is the ABR streaming portion on the demo page.
