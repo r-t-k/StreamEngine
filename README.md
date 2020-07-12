@@ -8,8 +8,6 @@ This project is in the very early stages of development, and lots more info will
 **Early version of the desktop homepage, done with plain old html/css vanilla js and UIkit.**
 [![Image from Gyazo](https://i.gyazo.com/0bd87cae5130c80427f74f3b70d7f321.png)](https://gyazo.com/0bd87cae5130c80427f74f3b70d7f321)
 
-**Adaptive Bitrate HLS player and stream example.**
-![](stream_abr_demo.gif)
 
 ## Demo
 
