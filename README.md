@@ -21,9 +21,9 @@ This project is in the very early stages of development, and lots more info will
 
 **OBS:**
 
-Host:rtmp://66.228.51.60/
+Host:```rtmp://66.228.51.60/```
 
-Stream Key: live
+Stream Key: ```live```
 
 ## This Repo
 
