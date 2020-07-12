@@ -25,6 +25,12 @@ Host:```rtmp://66.228.51.60/```
 
 Stream Key: ```live```
 
+### Demo Progess
+
+So the only thing that is mostly functional at the moment is the ABR streaming portion on the demo page.
+
+Nav and links don't work yet, and of course the homepage and other pages aren't ready. 
+
 ## This Repo
 
 
