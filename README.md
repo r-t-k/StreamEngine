@@ -11,6 +11,9 @@ This project is in the very early stages of development, and lots more info will
 
 ## Demo
 
+If you want to test the live stream functionality, I have setup a page below for you to do so.
+
+
 **Link:** https://streamengine.live/channels/demo
 
 **Username:** demo
