@@ -63,7 +63,7 @@ The stack may change abit early on in development, but right now I have a solid 
 - UI: Django w/UIkit and vanilla js (plan to move to Vue in the future)
 - API: Django Rest Framework
 - StreamEngine Admin Panel: TBD
-- Stream Backend: OSSRS (https://github.com/ossrs/srs/)
+- Stream Backend: OSSRS (https://github.com/ossrs/srs/) for HLS transcode and streaming
 
 ## The Status
 
